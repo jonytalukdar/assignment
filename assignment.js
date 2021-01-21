@@ -44,3 +44,20 @@ function hotelCost(spendDay) {
 
 var resultOfCost = hotelCost(24);
 console.log(resultOfCost);
+
+// fourth problem
+
+var friendsName = ['Joney', 'Shimul', 'Akash', 'Rashedul', 'Robin'];
+
+function megaFriend(friendsName) {
+  let word = '';
+  for (let i = 0; i < friendsName.length; i++) {
+    if (word.length < friendsName[i].length) {
+      word = friendsName[i];
+    }
+  }
+  return word;
+}
+
+var largestName = megaFriend(friendsName);
+console.log(largestName);
