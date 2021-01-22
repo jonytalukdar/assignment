@@ -50,8 +50,8 @@ console.log(resultOfCost);
 var friendsName = ['Joney', 'Shimul', 'Akash', 'Rashedul', 'Robin', 'kawsar'];
 
 function megaFriend(friendsName) {
-  let largestName = '';
-  for (let i = 0; i < friendsName.length; i++) {
+  var largestName = '';
+  for (var i = 0; i < friendsName.length; i++) {
     if (largestName.length < friendsName[i].length) {
       largestName = friendsName[i];
     }
