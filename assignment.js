@@ -29,14 +29,14 @@ function hotelCost(spendDay) {
     totatSpend = spendDay * 100;
   } else if (spendDay <= 20) {
     var firstTenDays = 10 * 100;
-    var remainingDay = spendDay - 10;
-    var secondTenDays = remainingDay * 80;
+    var remainingDays = spendDay - 10;
+    var secondTenDays = remainingDays * 80;
     totatSpend = firstTenDays + secondTenDays;
   } else {
     var firstTenDays = 10 * 100;
     var secondTenDays = 10 * 80;
-    var remainingDay = spendDay - 20;
-    var thirdStage = remainingDay * 50;
+    var remainingDays = spendDay - 20;
+    var thirdStage = remainingDays * 50;
     totatSpend = firstTenDays + secondTenDays + thirdStage;
   }
   return totatSpend;
@@ -50,14 +50,14 @@ console.log(resultOfCost);
 var friendsName = ['Joney', 'Shimul', 'Akash', 'Rashedul', 'Robin'];
 
 function megaFriend(friendsName) {
-  let word = '';
+  let largestName = '';
   for (let i = 0; i < friendsName.length; i++) {
-    if (word.length < friendsName[i].length) {
-      word = friendsName[i];
+    if (largestName.length < friendsName[i].length) {
+      largestName = friendsName[i];
     }
   }
-  return word;
+  return largestName;
 }
 
-var largestName = megaFriend(friendsName);
-console.log(largestName);
+var resultOfLarge = megaFriend(friendsName);
+console.log(resultOfLarge);
