@@ -14,18 +14,24 @@ function kilometerToMeter(kilometer) {
 // second problem
 
 function budgetCalculator(ghori, phone, laptop) {
-  var totalGhori = 50 * ghori;
-  var totalPhone = 100 * phone;
-  var totalLaptop = 500 * laptop;
-  totatBudget = totalGhori + totalPhone + totalLaptop;
-  return totatBudget;
+  if (ghori <= 0 && phone <= 0 && laptop <= 0) {
+    console.log('You have entered an empty value');
+  } else {
+    var totalGhori = 50 * ghori;
+    var totalPhone = 100 * phone;
+    var totalLaptop = 500 * laptop;
+    totatBudget = totalGhori + totalPhone + totalLaptop;
+    return totatBudget;
+  }
 }
 
 // third problem
 
 function hotelCost(spendDay) {
   var totatSpend = 0;
-  if (spendDay <= 10) {
+  if (spendDay <= 0) {
+    console.log('You dont have spend any day');
+  } else if (spendDay <= 10) {
     totatSpend = spendDay * 100;
   } else if (spendDay <= 20) {
     var firstTenDays = 10 * 100;
