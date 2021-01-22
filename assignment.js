@@ -3,8 +3,12 @@
 // first problem
 
 function kilometerToMeter(kilometer) {
-  meter = kilometer * 100;
-  return meter;
+  if (kilometer > 0) {
+    var meter = kilometer * 1000;
+    return meter;
+  } else {
+    console.log('Please input the positive value');
+  }
 }
 
 // second problem
