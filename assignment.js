@@ -13,14 +13,14 @@ console.log(resultOfMeter);
 // second problem
 
 function budgetCalculator(ghori, phone, laptop) {
-  var totalGhori = 4 * ghori;
-  var totalPhone = 3 * phone;
-  var totalLaptop = 2 * laptop;
+  var totalGhori = 50 * ghori;
+  var totalPhone = 100 * phone;
+  var totalLaptop = 500 * laptop;
   totatBudget = totalGhori + totalPhone + totalLaptop;
   return totatBudget;
 }
 
-var resultOfBudget = budgetCalculator(50, 100, 500);
+var resultOfBudget = budgetCalculator(4, 3, 2);
 console.log(resultOfBudget);
 
 // third problem
