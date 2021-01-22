@@ -7,9 +7,6 @@ function kilometerToMeter(kilometer) {
   return meter;
 }
 
-var resultOfMeter = kilometerToMeter(12);
-console.log(resultOfMeter);
-
 // second problem
 
 function budgetCalculator(ghori, phone, laptop) {
@@ -19,9 +16,6 @@ function budgetCalculator(ghori, phone, laptop) {
   totatBudget = totalGhori + totalPhone + totalLaptop;
   return totatBudget;
 }
-
-var resultOfBudget = budgetCalculator(4, 3, 2);
-console.log(resultOfBudget);
 
 // third problem
 
@@ -44,12 +38,7 @@ function hotelCost(spendDay) {
   return totatSpend;
 }
 
-var resultOfCost = hotelCost(24);
-console.log(resultOfCost);
-
 // fourth problem
-
-var friendsName = ['Joney', 'Shimul', 'Akash', 'Rashedul', 'Robin', 'kawsar'];
 
 function megaFriend(friendsName) {
   var largestName = '';
@@ -60,6 +49,3 @@ function megaFriend(friendsName) {
   }
   return largestName;
 }
-
-var resultOfLarge = megaFriend(friendsName);
-console.log(resultOfLarge);
