@@ -51,11 +51,15 @@ function hotelCost(spendDay) {
 // fourth problem
 
 function megaFriend(friendsName) {
-  var largestName = '';
-  for (var i = 0; i < friendsName.length; i++) {
-    if (largestName.length < friendsName[i].length) {
-      largestName = friendsName[i];
+  if (friendsName == 0 || friendsName == '') {
+    console.log('Please insert the name of an array');
+  } else {
+    var largestName = '';
+    for (var i = 0; i < friendsName.length; i++) {
+      if (largestName.length < friendsName[i].length) {
+        largestName = friendsName[i];
+      }
     }
+    return largestName;
   }
-  return largestName;
 }
