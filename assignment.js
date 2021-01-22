@@ -30,7 +30,7 @@ function budgetCalculator(ghori, phone, laptop) {
 function hotelCost(spendDay) {
   var totatSpend = 0;
   if (spendDay <= 0) {
-    console.log('You dont have spend any day');
+    console.log('You dont spend any day');
   } else if (spendDay <= 10) {
     totatSpend = spendDay * 100;
   } else if (spendDay <= 20) {
