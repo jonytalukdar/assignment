@@ -3,7 +3,7 @@
 // first problem
 
 function kilometerToMeter(kilometer) {
-  var meter = kilometer * 1000;
+  meter = kilometer * 100;
   return meter;
 }
 
